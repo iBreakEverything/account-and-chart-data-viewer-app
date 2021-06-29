@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato.woff2);
+}
+html, body, .container-fluid {
+  font-family: Lato;
+  height: 100%;
+}
+html {
+  -webkit-app-region: drag;
+}
+legend {
+  color: #45ffff;
+  border-bottom: 1px solid #3633D6;
+}
+.page-wrap {
+  height: 100%;
+}
+#accounts-box {
+  width: 60%; /* size of accountsBox */
+  display: table;
+  margin: 10% auto 10% auto;
+}
+.chart-container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+body.backgroundColor {
+  background-color: rgb(10, 9, 43);
+}
+body.backgroundImage {
+  background: linear-gradient(-90deg,rgba(10,9,43,0),rgba(10,9,43,.7) 50%,rgba(10,9,43,0)),url(../img/header-bg.svg) 0 0,#151361;
+  background-color: rgb(10, 9, 43);
+}
+/* custom card ***************************************************************/
+div.flex-table-header {
+  color: #45ffff;
+}
+.card {
+  border: 1px solid transparent;
+  background-color: #333;
+}
+.card-header {
+  text-decoration: none;
+  border: 0px solid transparent;
+  background-image: -webkit-linear-gradient(#3633D6 0%, #151361 100%);
+}
+.card-body {
+  color: #F1F1F1;
+}
+.btn-accordion, .btn-accordion:focus {
+  text-decoration: none;
+  color: #45ffff;
+}
+.btn-accordion:hover {
+  text-decoration: none;
+  color: #118b8b;
+}
+/* custom d-flex navbar ******************************************************/
+div#navbar.d-flex {
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  background-image: -webkit-linear-gradient(#3633D6 0%, #151361 100%);
+  border: 1px solid transparent;
+  align-items: baseline;
+}
+div#navbar.d-flex > div {
+  position:relative;
+  z-index: 1;
+}
+div#navbar.d-flex > div > a {
+  color: #F1F1F1;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+div#navbar.d-flex > div.custom-brand > a {
+  font-size: 18px;
+  color: #45ffff;
+}
+div#navbar.d-flex > div.custom-page.active > a {
+  color: #45ffff;
+}
+div#navbar.d-flex > div.custom-page > a:hover {
+  color: #118b8b;
+}
+div#navbar.d-flex > div > a,
+div#navbar.d-flex > div > a:after,
+div#navbar.d-flex > div > a:before {
+  transition: all .5s;
+}
+div#navbar.d-flex > div.custom-page > a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: #45ffff;
+  opacity: 0;
+  z-index: -1;
+}
+div#navbar.d-flex > div.custom-page >  a:hover:after {
+  opacity: 1;
+  height: 100%;
+}
+/*****************************************************************************/

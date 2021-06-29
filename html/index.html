@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-BQifOBNTQxL5mL7CZDH5gC89aWNa7DNeaafDF7Mrz1w=' ">
+
+  <title>Main Page</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+  <script src="../js/functional/jquery.js" charset="utf-8"></script>
+  <script src="../js/functional/bootstrap.min.js" charset="utf-8"></script>
+  <script class="load" src="../js/flex-navbar.js" charset="utf-8"></script>
+  <script class="load" src="../js/index.js" charset="utf-8"></script>
+  <script src="../js/loader.js" charset="utf-8"></script>
+</head>
+
+<body class="backgroundImage">
+
+  <div id="wrapper" class="page-wrap index">
+    <!-- auto-generated content goes here -->
+    <div id="accounts-box">
+      <div id="accountsAccordion" class="accordion">
+        <!-- card 1 -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <button type="button" class="btn btn-link btn-accordion collapsed" data-toggle="collapse" data-target="#collapseOne">
+              Accounts
+            </button>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accountsAccordion">
+            <div id="accountData" class="card-body">
+              <!-- auto-generated card body -->
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <button type="button" class="btn btn-link btn-accordion collapsed" data-toggle="collapse" data-target="#collapseTwo">
+              Edit Account
+            </button>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accountsAccordion">
+            <div id="editData" class="card-body">
+              <!-- body goes here -->
+              <!-- TODO add form with dropdown menu select and text box + submit button -->
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <button type="button" class="btn btn-link btn-accordion collapsed" data-toggle="collapse" data-target="#collapseThree">
+              Add Account
+            </button>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accountsAccordion">
+            <div class="card-body">
+              <form id="form" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="accountName">Account Name</label>
+                  <input type="text" class="form-control" id="accountName" aria-describedby="accountHelp" placeholder="Enter account name" required>
+                  <small id="accountHelp" class="form-text text-muted">Alias for your account.</small>
+                  <div id="accountNameErr" class="invalid-feedback">
+                    Enter account name.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="jwtToken">JWT Token</label>
+                  <input type="text" class="form-control" id="jwtToken" aria-describedby="tokenHelp" placeholder="Enter JWT token" required>
+                  <small id="tokenHelp" class="form-text text-muted">Account token. (TODO add info)</small>
+                  <div id="jwtTokenErr" class="invalid-feedback">
+                    Enter JWT token.
+                  </div>
+                </div>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

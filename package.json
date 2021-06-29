@@ -1,0 +1,21 @@
+{
+  "name": "account-and-chart-data-viewer-app",
+  "version": "1.0.0",
+  "description": "An app with Chart.js and Electron to view some data.",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^7.1.2"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "chart-data-viewer-app"
+  },
+  "author": "iBreakEverything",
+  "license": "apache-2.0"
+}
