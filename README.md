@@ -1,2 +1,2 @@
 # account-and-chart-data-viewer-app
- An app with Chart.js and Electron to view some data
+A test application with Electron, Bootstrap and Chart.js used to view some data.
